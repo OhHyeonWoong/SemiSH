@@ -8,6 +8,39 @@
 	<!-- 헤더 -->
     <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+	<!-- Custom fonts for this template -->
+    <link href="/prototype/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/prototype/resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/prototype/resources/css/menu.css" rel="stylesheet">
+
+<style type="text/css">
+html {
+height: 100%;
+}
+body {
+margin: 0;
+height: 100%;
+}
+.contents{
+min-height: 100%;
+position: relative;
+margin-top:200px;
+padding-bottom:50px;
+}
+.footer{
+position: absolute;
+margin-bottom:0%;
+width:100%;
+height:150px;
+color: white;
+background-color: silver;
+
+}
+</style>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
@@ -38,13 +71,130 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
+	</header>
     <!-- 헤더 종료-->
-
-
-
+<nav class="contents"> <!--여기에 내용물-->
+ㅇㄿㅇㄴㄹ<br>
+ㅇㄿㅇㄴㄹ<br>
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>7
+ㅇㄿㅇㄴㄹ<br>
 
 </nav>
+ <!-- 바닥 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!--바닥종료-->
 
+<!--position:fixed;포지션픽스시, 화면을 따라다님 -->
 
 </body>
 </html>

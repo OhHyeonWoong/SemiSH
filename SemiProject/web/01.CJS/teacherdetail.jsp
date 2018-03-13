@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html >
 <html>
 <head>
 
@@ -20,33 +20,7 @@
 	<!-- 메뉴바 폰트 -->
     <link href="/prototype/resources/css/menu.css" rel="stylesheet">
 	
-	<script type="text/javascript" src="/prototype/resources/js/CJSjs1.js"></script>
-
 <style type="text/css">
-
-[id*=flat-slider].ui-slider,[id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line {
-    background: lighten($bg, 25%);
-}
-
-[id*=flat-slider].ui-slider .ui-slider-handle .ui-slider-tip:after {
-    border-left-color: #434d5a;
-}
-[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-hover, 
-[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-focus, 
-[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active 
-{
-      border-color: white; 
-}
-
-.stuff {
- 
-    padding: 50px 50px 50px;
-    max-width: 900px;
-    margin: auto;
-    
-}
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,600);
-
 html {
 height: 100%;
 }
@@ -145,10 +119,23 @@ height:300px;
 list-style:none;
 padding-top:30px;
 }
-.reviewdetail{/*리뷰의 내용이 들어감.*/
+.reviewdetail{/*리뷰의 내용이 들어감. (li)*/
 padding-top:30px;
 }
+.school{/*학력*/
+background:#cc66ff;
+margin:0 auto;
+margin-top:3px;
+width:1100px;
+height:200px;
+}
+.divOfreviewdetail{/*리뷰 내용이 들어감(nav) */
+background:red;
+width:930px;
+height:130px;
+}
 </style>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>선생이름 님의 ...?</title>
 </head>
@@ -229,20 +216,32 @@ padding-top:30px;
 	
 	<ul class="reviewtop">
 		<li class="reviewtitle"> 회원정보      
-        <nav class="stuff">
-		<div id="flat-slider-vertical-1"></div>
-        <div id="flat-slider-vertical-2"></div>
-        <div id="flat-slider-vertical-3"></div> 
-		</nav>
-		<--레인지 타입을 별로 바꾸기.</li>
+      
+
+		<--레인지 타입을 별로 바꾸기.
 		
-		<li class="reviewdetail">실질적인 리뷰가 들어감</li>
+		
+		</li>
+		
+		<li class="reviewdetail">
+			<nav class="divOfreviewdetail">
+			실질적인 리뷰가 들어감
+			<br>	<br>	<br>	<br>4줄
+			</nav>
+		</li>
 	
+	<li Style="text-align:right; margin-right:10px">
+	다른 후기들보기
+	</li>
 	</ul>
 
 
 
 	</nav><!-- 리뷰란 종료 -->
+
+	<nav class="school"><!--학력란-->
+	
+	</nav>
 
 
 	<nav class="howteach"><!--커리큘럼란-->

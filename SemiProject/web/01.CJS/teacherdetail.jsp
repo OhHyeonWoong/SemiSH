@@ -48,7 +48,7 @@ height: 100%;
 .contents{
 min-height: 100%;
 position: relative;
-margin-top:200px;
+margin-top:90px;
 padding-bottom:20px;
 }
 .footer{
@@ -60,9 +60,7 @@ height:150px;
 color: white;
 background-color: silver;
 }
-.contents{
 
-}
 .topbend{
 background:#00ffff;
 margin:0px auto;

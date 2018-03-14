@@ -104,17 +104,24 @@ body {
 	<!--내용물-->
 	<nav class="contents"> 
 	
- <h1 align="center">학생 정보 보기</h1>
+ <h1 align="center">선생 정보 보기</h1>
 	<hr>
 	
 	<div id="wrapper">
 	<center>
-		<div id="info" style="width: 70%; height: 300px; border: 1px solid gray; margin-top: 50px;">
+		<div id="info" style="width: 1100px; height: 300px; border: 1px solid gray; margin-top: 50px;">
 			<div style="width: 100%; height: 230px;  background: #f2f2f2;">
 				<div style="width: 20%; height: 230px;float: left; margin-top: 10px;padding:5px;"> 
 				<img src="/prototype/resources/img/testimonials-1.jpg" class="img-circle" alt="Cinque Terre" width="100%" height="auto"> 
 				</div>
-				
+			</div>
+			<div>
+			<table>
+			<tr>
+			<td>이름</td>
+			<td>분야</td>
+			</tr>
+			</table>
 			
 			</div>
 			<div style="width: 100%; height: 70px; padding: 10px;">
@@ -124,7 +131,7 @@ body {
 		
 		</div>
 	<br><br>
-	<h1>수강 내역</h1>
+	<h1>강의 내역</h1>
 	<hr>
 	<div id="info" style="width: 70%; height: 300px; border: 1px solid gray; margin-top: 50px;">
 	<div class="container">       
@@ -132,43 +139,41 @@ body {
     <thead>
       <tr>
         <th>강의명</th>
-        <th>선생님</th>
         <th>과목</th>
-        <th>후기작성</th>
         <th>상세보기</th>
+        <th>삭제하기</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>java강의</td>
-        <td>Doe</td>
         <td>컴퓨터/IT</td>
-        <td><button type="button" class="btn">Basic</button></td>
         <td><button type="button" class="btn">상세보기</button></td>
+        <td><button type="button" class="btn">삭제</button></td>
       </tr>
       <tr>
         <td>Mary</td>
-        <td>Moe</td>
         <td>mary@example.com</td>
-        <td><button type="button" class="btn">후기작성</button></td>
         <td><button type="button" class="btn">상세보기</button></td>
+         <td><button type="button" class="btn">삭제</button></td>
       </tr>
       <tr>
         <td>July</td>
-        <td>Dooley</td>
         <td>july@example.com</td>
-        <td><button type="button" class="btn">후기작성</button></td>
         <td><button type="button" class="btn">상세보기</button></td>
+         <td><button type="button" class="btn">삭제</button></td>
       </tr>
       <tr>
         <td>July</td>
-        <td>Dooley</td>
         <td>july@example.com</td>
-        <td><button type="button" class="btn">후기작성</button></td>
         <td><button type="button" class="btn">상세보기</button></td>
+         <td><button type="button" class="btn">삭제</button></td>
       </tr>
     </tbody>
   </table>
+</div>
+<div style="float: right; margin-top:5px;">
+<button type="button" class="btn">새 강의 등록</button>
 </div>
 	</div>
 	
@@ -180,6 +185,7 @@ body {
 
 	
 	</nav>
+	<br><br>
 	<!--내용 끝-->
 	메인에 뭘넣어야하나?
 	<!-- 바닥 -->

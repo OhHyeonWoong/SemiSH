@@ -5,6 +5,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    
     <title>Circles</title>
     <style>
       /* Always set the map height explicitly to define the size of the div

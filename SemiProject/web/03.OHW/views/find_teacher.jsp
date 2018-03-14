@@ -12,8 +12,7 @@
 		$('#location_si').html(value);
 		switch(value) {
 		case "111" : 
-			$('#location_si').load("parts/location/111.jsp");
-			break;
+			$('#location_si').load("parts/location/111.jsp"); break;
 		}
 	}
 	
@@ -49,6 +48,7 @@
 	</section>
 	<section>
 		<h3>수업</h3>
+			
 	</section>
 	<section>
 		<h3>기본정보</h3>

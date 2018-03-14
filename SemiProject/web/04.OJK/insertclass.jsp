@@ -163,7 +163,11 @@ a.btn.disabled, fieldset[disabled] a.btn {
 	<nav class="contents">
 	<center>
 		<div id="wrapper" style="width: 1100px; height: 1000px;">
-		
+			<div style="width: 1100px; height: 200px; background: gray; padding:50px;">
+			<span>강의명</span>&nbsp;<input type="text" value="classname"><br>
+			<span>전화번호</span>&nbsp;<input type="text" value="phone">
+			
+			</div>
 			</div>
 	</center>
 

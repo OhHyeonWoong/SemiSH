@@ -95,18 +95,19 @@ height:300px;
 }
 
 .topdiv[name=img]>ul>li{/*사진이 속한 영역 리스트형식 */
-list-style:none
+list-style:none;
+margin-top:10px;
 }
 
 .topdiv[name=img]>ul>li>img{/*사진의 크기 및 위치 백그라운드*/
-
 width:200px;
 height:200px;
 padding-left:0px;
-padding-top:10px;
+padding-top:0px;
 padding-right:5px;
 padding-bottom:0px;
 background:red;
+border-radius: 50%;
 }
 .underpic{/*사진 바로 및 이름 및,나이 성별*/
 margin-top:15px;

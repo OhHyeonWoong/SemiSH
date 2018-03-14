@@ -11,8 +11,12 @@
     <title>은밀한 과외</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core JavaScript -->
+    <script src="resources/vendor/jquery/jquery.min.js"></script>
+    <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
     <!-- Custom fonts for this template -->
     <link href="resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -21,8 +25,34 @@
     <!-- Custom styles for this template -->
     <link href="resources/css/landing-page.min.css" rel="stylesheet">
     <link href="resources/css/menu.css" rel="stylesheet">
-    <script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
-    
+   
+	<script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
+
+<style type="text/css">
+html {
+height: 5px;
+}
+body {
+margin: 0;
+height: 60%;
+}
+.contents{
+min-height: 100%;
+position: relative;
+margin-top:200px;
+padding-bottom:10px;
+}
+.footer{
+<!--position:fixed;포지션픽스시, 화면을 따라다님 -->
+position: absolute;
+margin-bottom: 0%;
+width:100%;
+height:200px;
+color: white;
+background-color: silver;
+}
+
+</style>
     
    
   </head>
@@ -47,56 +77,8 @@
    	      });
    	  });
    	   </script>
- <!--   <nav class="navbar navbar-light bg-light static-top">
-     
-        <a class="navbar-brand" href="#" style="margin-right:10px;">로고넣기</a>
-      <div class="container">
-        <nav class="clearfix">
-   	      <ul class="clearfix">
-   	         <li><a href="#">선생찾기</a></li>
-   	         <li><a href="#">학생찾기</a></li>
-   	         <li><a href="#">커뮤니티</a></li>
-   	         <li><a href="#">신고합니다</a></li>
-   	         <li><a href="#">건의합니다</a></li>
-   	        
-   	      </ul>
-   	      <a id="pull" href="#">Menu</a>
-   	  </nav>
-       
-      </div>
-       <a class="btn btn-primary" href="#">로그인하기</a>
-       &nbsp;
-       <a class="btn btn-primary" href="#">회원가입</a>
-    </nav>
-  -->
  
-<!--  <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Carousel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header> -->
- 
-    <!-- Masthead -->
+    <!-- Header-->
     <header class="masthead text-white text-center">
      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Carousel</a>
@@ -104,34 +86,43 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/prototype/viewstudent.jsp">회원정보보기 <span class="sr-only">(current)</span></a>
+         <ul class="navbar-nav mr-auto" style="width: 500px; margin:0 auto;">
+            <li class="nav-item active" >
+			  <a class="nav-link" href="/prototype/viewstudent.jsp">선생찾기<span		class="sr-only">(current)</span></a>
+            </li>
+			    <li class="nav-item">
+              <a class="nav-link" href="#">학생찾기</a>
+            </li>
+			</li>
+			    <li class="nav-item">
+              <a class="nav-link" href="#">카테고리찾기</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link disabled" href="#">신고합니다!</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+			    <li class="nav-item" style="margin-right:0px;">
+              <a class="nav-link" href="#">건의합니다</a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
+          
+		  <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
       <div class="overlay"></div>
-      <div class="container">
+      <div class="container"  style="margin-top:150px"> <!--마진탭이 배경화면 사진의 크기.-->
         <div class="row">
           <div class="col-xl-9 mx-auto">
-             <h1 class="mb-5">태환완료</h1>
+             <h1 class="mb-5"><br></h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form action="#" method="post"> <!-- 검색기능 -->
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="뭐 배울래?">
+                  <input type="text" class="form-control form-control-lg" placeholder="뭐 배울래?">
                 </div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">검색!</button>
@@ -142,9 +133,13 @@
         </div>
       </div>
     </header>   
-
+<!--내용물-->
+<nav class="contents"> 
+메인에 뭘넣어야하나?
+</nav>
+<!--내용 끝-->
     <!-- Footer -->
-    <footer class="footer bg-light">
+     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -189,11 +184,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="resources/vendor/jquery/jquery.min.js"></script>
-    <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>

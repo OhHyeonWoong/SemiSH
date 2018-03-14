@@ -3,30 +3,91 @@
 <!DOCTYPE html >
 <html>
 <head>
-
-
 <script type="text/javascript" src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
 <script type="text/javascript">
 function info(){//수업정보보기
 	
 	$(".howteachOfchange").load("info.jsp")
-	
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
 	};
 	
 function info1(){//수정방식보기
 
 	$(".howteachOfchange").load("info1.jsp");
-	
-	};
-function info2(){//강사포트폴리오
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
 
-	$(".howteachOfchange").load("info2.jsp");
-	
+	};
+function info2(){//자격관련 이미지
+
+	$(".howteachOfchange").load("imagechange.jsp");
+	$(".howteachOfchange").css("width","700");
+	$(".howteachOfchange").css("margin-left","120px");
+
+
 	};
 function info3(){//지도및위치반경
-	$(".howteachOfchange").load("info3.jsp");
-	alert("dfd");
+	$(".howteachOfchange").load("map.jsp");
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
+	$(".howteachOfchange").html("  <div id="map"></div>
+		    <script>
+    // This example creates circles on the map, representing populations in North
+    // America.
+
+    // First, create an object containing LatLng and population for each city.
+    var citymap = {
+      chicago: {
+        center: {lat: 41.878, lng: -87.629},
+        population: 2714856
+      },
+      newyork: {
+        center: {lat: 40.714, lng: -74.005},
+        population: 8405837
+      },
+      losangeles: {
+        center: {lat: 34.052, lng: -118.243},
+        population: 3857799
+      },
+      vancouver: {
+        center: {lat: 49.25, lng: -123.1},
+        population: 603502
+      }
+    };
+
+    function initMap() {
+      // Create the map.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: {lat: 37.090, lng: -95.712},
+        mapTypeId: 'terrain'
+      });
+
+      // Construct the circle for each value in citymap.
+      // Note: We scale the area of the circle based on the population.
+      for (var city in citymap) {
+        // Add the circle for this city to the map.
+        var cityCircle = new google.maps.Circle({
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#FF0000',
+          fillOpacity: 0.35,
+          map: map,
+          center: citymap[city].center,
+          radius: Math.sqrt(citymap[city].population) * 100
+        });
+      }
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARXzaq6DvT3kgchGrixXPqeeuaxgesojs&callback=initMap">
+  </script>"
+			
+	);
 	
 	};
 

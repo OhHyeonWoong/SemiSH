@@ -5,14 +5,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>은밀한 결과</title>
+
+<style type="text/css">
+	.tclass {
+		display : none;	
+	}
+</style>
+
 <script type="text/javascript" src="/prototype/03.OHW/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 	
-	function changeLocation(value){
-		$('#location_si').html(value);
+	function changeLocation(value){		
 		switch(value) {
 		case "111" : 
 			$('#location_si').load("parts/location/111.jsp"); break;
+		}
+	}
+	
+	function changeClass(id) {
+		console.log(id);
+		switch(id) {
+		
+		case "bg": $(".tclass").hide(); $("#battleground").show(); break;
+		case "lol": $(".tclass").hide(); $("#leageoflegend").show(); break;
+		case "ow": $(".tclass").hide(); $("#overwatch").show(); break;
+		case "hh": $(".tclass").hide(); $("#hoho").show(); break;
+		case "kk": $(".tclass").hide(); $("#jojo").show(); break;
+		
 		}
 	}
 	
@@ -48,7 +67,35 @@
 	</section>
 	<section>
 		<h3>수업</h3>
+		<div>
+			<a onclick="changeClass(this.id);" id = "bg">배그</a>
+			<a onclick="changeClass(this.id);" id = "lol">롤</a>
+			<a onclick="changeClass(this.id);" id = "ow">고급시계</a>
+			<a onclick="changeClass(this.id);" id = "hh">호호</a>
+			<a onclick="changeClass(this.id);" id = "kk">캬캬</a>
+		</div>		
+		<p class = "select_class">
+			<div class="tclass" id="battleground">
+				<input type="checkbox" value="">총
+			</div>
 			
+			<div class="tclass" id="leageoflegend" style="display:none;">
+				<input type="checkbox" value="">칼
+			</div>
+			
+			<div class="tclass" id="overwatch">
+				<input type="checkbox" value="">방패
+			</div>
+			
+			<div class="tclass" id="hoho">
+				<input type="checkbox" value="">웃음
+			</div>
+			
+			<div class="tclass" id="jojo">
+				<input type="checkbox" value="">쪼갬
+			</div>
+		</p>			
+				
 	</section>
 	<section>
 		<h3>기본정보</h3>

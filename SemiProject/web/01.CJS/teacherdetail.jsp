@@ -126,7 +126,7 @@ background:#cc66ff;
 margin:0 auto;
 margin-top:3px;
 width:1100px;
-height:300px;
+height:600px;
 }
 .reviewtop{/*리뷰의 상위*/
 list-style:none;
@@ -141,15 +141,37 @@ margin:0 auto;
 margin-top:3px;
 width:1100px;
 height:200px;
+border: 1px solid #ffffff;
 }
 .divOfreviewdetail{/*리뷰 내용이 들어감(nav) */
 background:red;
 width:930px;
 height:130px;
 }
+.schoolofdetail{
+list-style:none;
+margin-top:10px;
+margin-left:-20px;
+margin-right:10px;
+}
+.schoolOfdetailIOfli{
+float:left;
+width:225px;
+background:#66cccc;
+margin: 20px;
+height:140px;
+padding:20px;
+}
+.howteachofbtn{
 
 
-
+}
+.howteachOfchange{
+background:#ff6666;
+margin-top:10px;
+padding-top:10px;
+width:1000px;
+}
 
 </style>
 
@@ -233,11 +255,8 @@ height:130px;
     <nav class="review"><!-- 리뷰란 -->
 	
 	<ul class="reviewtop">
-		<li class="reviewtitle"> 회원정보      
-        <%@ include file="../01.CJS/star.jsp" %>
-
-		<--레인지 타입을 별로 바꾸기.
-		
+		<li class="reviewtitle"> 회원정보   &nbsp;    &nbsp;    &nbsp;    &nbsp; 
+        <%@ include file="../01.CJS/Fixedstar.jsp" %>
 		
 		</li>
 		
@@ -249,7 +268,7 @@ height:130px;
 		</li>
 	
 	<li Style="text-align:right; margin-right:10px">
-	다른 후기들보기
+	다른 후기들보기<-하이퍼링크 추가하기 혹은 버튼
 	</li>
 	</ul>
 
@@ -259,12 +278,36 @@ height:130px;
 
 	<nav class="school"><!--학력란-->
 	
+	<ul class="schoolofdetail">
+		<li class="schoolOfdetailIOfli">고등학교나옴!</li>	
+		<li class="schoolOfdetailIOfli">공부 쫌 잘함.!</li>	
+		<li class="schoolOfdetailIOfli">집은 님근처로 이사감</li>
+		<li class="schoolOfdetailIOfli">월 30만원! 20회수업!</li>
+	</ul>
+	
 	</nav>
 
 
-	<nav class="howteach"><!--커리큘럼란-->
-	
+	<nav class="howteach" style="padding-top:10px;"><!--커리큘럼란-->
+	<ul style="list-style:none;">
+		<li>
+		<nav>
+		<input type="button" value="수업 정보" class="howteachofbtn">
+		<input type="button" value="수업 방식" class="howteachofbtn" style="margin-left:50px;">
+		<input type="button" value="포트폴리오" class="howteachofbtn" style="margin-left:50px;">
+		<input type="button" value="위치 및 반경" class="howteachofbtn" style="margin-left:50px;">
+		</nav>
+		</li>
+		<li>
+	<div class="howteachOfchange">
+		위의 버튼에 의해서 지속적으로 값이 변해야한다.<br>
+		각 버튼마다 함수로, include기능으로, 함수 기능
+	</div>
+		
+		</li>
+	</ul>
 	</nav><!--커리큘럼란 종료-->
+
 
 
 </nav>
@@ -283,7 +326,7 @@ height:130px;
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+               <a href="#">Contact</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">

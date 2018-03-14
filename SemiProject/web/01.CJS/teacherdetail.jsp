@@ -17,10 +17,18 @@
     <link href="/prototype/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="/prototype/resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
 	<!-- 메뉴바 폰트 -->
     <link href="/prototype/resources/css/menu.css" rel="stylesheet">
 	
 <style type="text/css">
+/* 스타 별점 */
+
+
+
+/*스타별점 ㅈ*/
+
+
 html {
 height: 100%;
 }
@@ -70,18 +78,22 @@ list-style:none;
 margin-left:10px;
 background:#ffffff
 }
+
 .topdiv[name=img]{
 width:230px;
 height:300px;
 }
+
 .topdiv[name=title]{
 width:600px;
 height:300px;
 }
+
 .topdiv[name=option]{
 width:180px;
 height:300px;
 }
+
 .topdiv[name=img]>ul>li{/*사진이 속한 영역 리스트형식 */
 list-style:none
 }
@@ -134,6 +146,10 @@ background:red;
 width:930px;
 height:130px;
 }
+
+
+
+
 </style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -177,6 +193,7 @@ height:130px;
         </div>
 	</header>
 <!-- 헤더 종료-->
+
 <!--내용물-->
 <nav class="contents">
 	<nav class="topbend"> <!--최상단 띠.-->
@@ -216,7 +233,7 @@ height:130px;
 	
 	<ul class="reviewtop">
 		<li class="reviewtitle"> 회원정보      
-      
+        <%@ include file="../01.CJS/star.jsp" %>
 
 		<--레인지 타입을 별로 바꾸기.
 		

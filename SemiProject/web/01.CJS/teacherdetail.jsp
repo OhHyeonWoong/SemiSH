@@ -7,7 +7,30 @@
 
 <script type="text/javascript" src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
 
+<script type="text/javascript">
+function info(){//수업정보보기
+	
+	$(".howteachOfchange").load("info.jsp")
+	
+	};
+	
+function info1(){//수정방식보기
 
+	$(".howteachOfchange").load("info1.jsp");
+	
+	};
+function info2(){//강사포트폴리오
+
+	$(".howteachOfchange").load("info2.jsp");
+	
+	};
+function info3(){//지도및위치반경
+	$(".howteachOfchange").load("info3.jsp");
+	alert("dfd");
+	
+	};
+
+</script>
 	
 <style type="text/css">
 /* 스타 별점 */
@@ -78,11 +101,18 @@ height:300px;
 .topdiv[name=option]{
 width:180px;
 height:300px;
+background:#000000;
+margin-left:10px; 
+padding:45px;
 }
-
+.imticon{
+margin-top:110px;
+margin-left:-39px;
+}
 .topdiv[name=img]>ul>li{/*사진이 속한 영역 리스트형식 */
 list-style:none;
-margin-top:10px;
+margin-top:20px;
+margin-left: -30px;
 }
 
 .topdiv[name=img]>ul>li>img{/*사진의 크기 및 위치 백그라운드*/
@@ -90,14 +120,14 @@ width:200px;
 height:200px;
 padding-left:0px;
 padding-top:0px;
-padding-right:5px;
+padding-right:0px;
 padding-bottom:0px;
-background:red;
 border-radius: 50%;
 }
 .underpic{/*사진 바로 및 이름 및,나이 성별*/
 margin-top:15px;
 text-align: center;
+margin-left: 15px;
 }
 .review{/*리뷰의 가장상위 영역*/
 
@@ -113,6 +143,7 @@ margin:0 auto;
 margin-top:3px;
 width:1100px;
 height:600px;
+
 }
 .reviewtop{/*리뷰의 상위*/
 list-style:none;
@@ -154,9 +185,10 @@ padding:20px;
 }
 .howteachOfchange{
 background:#ff6666;
-margin-top:10px;
+margin-top:30px;
 padding-top:10px;
 width:1000px;
+max-height:500px;
 }
 
 </style>
@@ -199,8 +231,11 @@ width:1000px;
 		</ul>
 		</li>
 		<li class="topdiv" name="option">
-		여기다 이 페이지의 정보 넣기, 
-		조회수,등등
+		조회수?<br>
+		등록일?<br>
+		<nav class="imticon">
+		<%@include file="./imticon.jsp" %>
+		</nav>
 		</li>
 	</ul>
 	</nav>
@@ -241,19 +276,18 @@ width:1000px;
 
 
 	<nav class="howteach" style="padding-top:10px;"><!--커리큘럼란-->
-	<ul style="list-style:none;">
+	<ul style="list-style:none; padding-top:15px;  ">
 		<li>
 		<nav>
-		<input type="button" value="수업 정보" class="howteachofbtn">
-		<input type="button" value="수업 방식" class="howteachofbtn" style="margin-left:50px;">
-		<input type="button" value="포트폴리오" class="howteachofbtn" style="margin-left:50px;">
-		<input type="button" value="위치 및 반경" class="howteachofbtn" style="margin-left:50px;">
+		<input type="button" value="수업 소개" class="howteachofbtn" onclick="info();">
+		<input type="button" value="수업 정보" class="howteachofbtn" style="margin-left:50px;" onclick="info1();">
+		<input type="button" value="포트폴리오" class="howteachofbtn" style="margin-left:50px;" onclick="info2();">
+		<input type="button" value="위치 및 반경" class="howteachofbtn" style="margin-left:50px;" onclick="info3();">
 		</nav>
 		</li>
 		<li>
 	<div class="howteachOfchange">
-		위의 버튼에 의해서 지속적으로 값이 변해야한다.<br>
-		각 버튼마다 함수로, include기능으로, 함수 기능
+		<%@include file='./info.jsp'%>
 	</div>
 		
 		</li>

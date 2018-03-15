@@ -58,13 +58,19 @@ function info3(){//지도및위치반경
 	
 	};
 
+
 </script>
 	
 <style type="text/css">
 /* 스타 별점 */
 
 /*스타별점 */
-
+.in4{
+position:relative;
+  height:500px;
+width: 500px;
+background: #ffffff;
+}
 html {
 height: 100%;
 }
@@ -403,13 +409,13 @@ border-radius: 35px;
                 </div><!--/Slider-->      
 		</div>
 		
-		<div class="in4">
 		
-		
+	</div>
+	</div>
+	<div class="in4">
+		<%@ include file="testmap.jsp" %>
+
 		</div>
-	</div>
-	</div>
-	
 	</div>
      </li>
 	</ul>

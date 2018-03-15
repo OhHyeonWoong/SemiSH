@@ -9,28 +9,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-	 
-    $('#myCarousel').carousel({
-            interval: 5000
-    });
 
-    $('#carousel-text').html($('#slide-content-0').html());
-
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click( function(){
-            var id_selector = $(this).attr("id");
-            var id = id_selector.substr(id_selector.length -1);
-            var id = parseInt(id);
-            $('#myCarousel').carousel(id);
-    });
-    // When the carousel slides, auto update the text
-    $('#myCarousel').on('slid', function (e) {
-            var id = $('.item.active').data('slide-number');
-            $('#carousel-text').html($('#slide-content-'+id).html());
-    });
-});</script>
 <script type="text/javascript">
 $(function(){
 	$(".in2").hide();
@@ -85,7 +64,6 @@ function info3(){//지도및위치반경
 /* 스타 별점 */
 
 /*스타별점 */
-
 
 html {
 height: 100%;
@@ -322,7 +300,7 @@ border-radius: 35px;
 		</li>
 	
 	<li Style="text-align:right; margin-right:10px">
-	다른 후기들보기<-하이퍼링크 추가하기 혹은 버튼
+	다른 후기들보기-하이퍼링크 추가하기 혹은 버튼
 	</li>
 	</ul>
 
@@ -427,13 +405,18 @@ border-radius: 35px;
 		
 		<div class="in4">
 		
-		</div>
 		
 		</div>
+	</div>
+	</div>
 	
-		</li>
+	</div>
+     </li>
 	</ul>
-	</nav><!--커리큘럼란 종료-->
+	
+	</nav>
+	
+	<!--커리큘럼란 종료-->
 
 
 

@@ -1,11 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 	<!-- 메뉴바 태그및 꾸밈-->
+	<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
+	  <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+    <script src="/prototype/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
     <link href="/prototype/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="/prototype/resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -18,13 +23,19 @@ width:100%;
 height:150px;
 color: white;
 background-color: silver;
+}
+.list-inline-item{
+margin-top: 15px;
+}
+
 	</style>
 
 </head>
 <body>
  <footer class="footer">
-      <div class="container">
-        <div class="row">
+      <div>
+        <div>
+        <center>
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
@@ -43,8 +54,14 @@ background-color: silver;
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
+      
             <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+                
           </div>
+          </center>
+          
+          <hr style="clear: both; border: none;">
+          
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
@@ -64,7 +81,9 @@ background-color: silver;
               </li>
             </ul>
           </div>
+          
         </div>
+        
       </div>
     </footer>
 </body>

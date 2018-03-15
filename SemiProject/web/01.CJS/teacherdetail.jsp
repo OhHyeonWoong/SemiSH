@@ -415,8 +415,7 @@ border-radius: 35px;
 	</div>
 	</div>
 	<div class="in4">
-		<%@ include file="testmap.jsp" %>
-
+		<%@ include file="testmap.jsp"%>
 		</div>
 	</div>
      </li>

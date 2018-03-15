@@ -84,9 +84,7 @@ min-height: 440px;
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
                 <div class="row">
-                  <div class="col col-xs-6">
-                    <h3 class="panel-title">Panel Heading</h3>
-                  </div>
+                
                   <div class="col col-xs-6 text-right">
                   	<select>
                   	 <option>뭘로 검색?</option>

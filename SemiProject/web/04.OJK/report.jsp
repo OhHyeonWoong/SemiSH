@@ -27,6 +27,7 @@ min-height: 100%;
 position: relative;
 margin-top:90px;
 padding-bottom:20px;
+
 }
 
 /* 버튼테마 */

@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<style type="text/css">
 	.footer{
-<!--position:fixed;포지션픽스시, 화면을 따라다님 -->
+
 position: absolute;
 margin-bottom:0%;
 width:100%;
@@ -52,14 +52,11 @@ margin-top: 15px;
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-      
             <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
                 
           </div>
           </center>
-          
-          <hr style="clear: both; border: none;">
-          
+         
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">

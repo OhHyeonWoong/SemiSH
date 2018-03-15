@@ -27,9 +27,7 @@ background-color: silver;
 .list-inline-item{
 margin-top: 15px;
 }
-
 	</style>
-
 </head>
 <body>
  <footer class="footer">

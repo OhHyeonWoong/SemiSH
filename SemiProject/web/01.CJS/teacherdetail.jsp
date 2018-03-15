@@ -69,6 +69,8 @@ function info3(){//지도및위치반경
 position:relative;
   height:500px;
 width: 500px;
+margin-left:280px;
+
 background: #ffffff;
 }
 html {

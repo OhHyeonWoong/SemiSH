@@ -5,8 +5,9 @@
   <head>
     <style>
        #map {
-        height:500px;
+        height:480px;
         width: 500px;
+        border-radius: 50px;
        }
     </style>
   </head>

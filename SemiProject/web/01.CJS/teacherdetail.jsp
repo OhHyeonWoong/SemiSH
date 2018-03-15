@@ -9,13 +9,14 @@
 <script type="text/javascript">
 function info(){//수업정보보기
 	
-	$(".howteachOfchange").load("info.jsp")
+	$(".howteachOfchange").show("i1");
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
+	
 	};
 	
 function info1(){//수정방식보기
-
+	$(".howteachOfchange").hide("i1");
 	$(".howteachOfchange").load("info1.jsp");
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
@@ -33,7 +34,7 @@ function info3(){//지도및위치반경
 	$(".howteachOfchange").load("map.jsp");
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
-
+	$(".howteachOfchange").html("여기다가 지도를 넣자.")
 	
 	};
 
@@ -58,14 +59,7 @@ position: relative;
 margin-top:90px;
 padding-bottom:20px;
 }
-.footer{
-<!--position:fixed;포지션픽스시, 화면을 따라다님 -->
-position: absolute;
-margin-bottom:0%;
-width:100%;
-height:150px;
-color: white;
-background-color: silver;
+
 }
 
 .topbend{
@@ -193,7 +187,22 @@ background:#ff6666;
 margin-top:30px;
 padding-top:10px;
 width:1000px;
+min-height:100px;
 max-height:500px;
+}
+.info1Oftop{
+width:100%;
+background:#ffffff;
+margin-top:2px; 
+min-height:70px;
+border:1px solid; #000000;
+}
+#info10{
+width:100%;
+background:#ffffff;
+margin-top:2px; 
+min-height:200px;
+border:1px solid; #000000;
 }
 
 </style>
@@ -291,9 +300,45 @@ max-height:500px;
 		</nav>
 		</li>
 		<li>
+		
+		
 	<div class="howteachOfchange">
-		<%@include file='./info.jsp'%>
+	<nav class="i1">
+<nav class="info1Oftop">
+<!-- 간단한소개 -->
+나는 말이야!!
+
+</nav>
+<nav class="info1Oftop" id="info10">
+<!--  진행방식-->
+수업은 이렇게 할거야!
+
+</nav>
+<nav class="info1Oftop">
+<!-- 수업경력과 포부 -->
+내가 해온거야!
+
+</nav>
+		</nav>
 	</div>
+		
+		<div>
+		
+		</div>
+		
+		<div>
+		
+		</div>
+		
+		<div>
+		
+		</div>
+		
+		
+		
+		
+		
+		
 		
 		</li>
 	</ul>
@@ -301,7 +346,20 @@ max-height:500px;
 
 
 
+
+
+
+
 </nav>
+
+
+
+
+
+
+
+
+
 
 
 <!--내용 끝-->

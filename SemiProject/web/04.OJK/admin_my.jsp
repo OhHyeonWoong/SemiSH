@@ -4,14 +4,14 @@
 <head>
 <title>관리자 마이페이지</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="/food/resources/css/top-menu.css">
-<link rel="stylesheet" href="/food/resources/css/foot.css">
-<link rel="stylesheet" href="/food/resources/css/left-menu.css">
-<link rel="stylesheet" href="/food/resources/css/left-menu-tab.css">
-<link rel="stylesheet" href="/food/resources/css/right-menu.css">
-<link rel="stylesheet" href="/food/resources/css/modInfo.css">
-<link rel="stylesheet" href="/food/resources/css/review.css">
-<link rel="stylesheet" href="/food/resources/css/replay.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/top-menu.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/foot.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/left-menu.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/left-menu-tab.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/right-menu.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/modInfo.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/review.css">
+<link rel="stylesheet" href="/prototype/04.OJK/css/replay.css">
 
 <script src="/food/resources/js/jquery.min.js"></script>
 <script src="/food/resources/js/jquery.scrolly.min.js"></script>

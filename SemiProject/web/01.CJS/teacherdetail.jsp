@@ -245,6 +245,10 @@ margin-top:2px;
 min-height:200px;
 border:1px solid; #000000;
 }
+.in3{
+margin-top:15px;
+margin-left:100px;
+}
 .item{
 }
 .item>img{
@@ -402,7 +406,7 @@ border-radius: 35px;
 
                                         <div class="item" data-slide-number="2">
                                         <img src="/prototype/resources/img/bg-showcase-1.jpg"></div>
-d
+
                                         <div class="item" data-slide-number="3">
                                         <img src="/prototype/resources/img/bg-showcase-2.jpg"></div>
 

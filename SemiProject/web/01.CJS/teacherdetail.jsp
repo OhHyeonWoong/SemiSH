@@ -1,40 +1,81 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 <head>
 <script type="text/javascript" src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <script type="text/javascript">
+jQuery(document).ready(function($) {
+	 
+    $('#myCarousel').carousel({
+            interval: 5000
+    });
+
+    $('#carousel-text').html($('#slide-content-0').html());
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click( function(){
+            var id_selector = $(this).attr("id");
+            var id = id_selector.substr(id_selector.length -1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+    });
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid', function (e) {
+            var id = $('.item.active').data('slide-number');
+            $('#carousel-text').html($('#slide-content-'+id).html());
+    });
+});</script>
+<script type="text/javascript">
+$(function(){
+	$(".in2").hide();
+	$(".in3").hide();
+	$(".in4").hide();
+})
 function info(){//수업정보보기
-	
-	$(".howteachOfchange").show("i1");
+	$(".in1").hide();
+	$(".in2").hide();
+	$(".in3").hide();
+	$(".in4").hide();
+	$(".in1").show();
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
-	
 	};
 	
 function info1(){//수정방식보기
-	$(".howteachOfchange").hide("i1");
-	$(".howteachOfchange").load("info1.jsp");
+	$(".in1").hide();
+	$(".in2").hide();
+	$(".in3").hide();
+	$(".in4").hide();
+	$(".in2").show();
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
 
 	};
 function info2(){//자격관련 이미지
-
-	$(".howteachOfchange").load("imagechange.jsp");
+	$(".in1").hide();
+	$(".in2").hide();
+	$(".in3").hide();
+	$(".in4").hide();
+	$(".in3").show();
+	
 	$(".howteachOfchange").css("width","700");
 	$(".howteachOfchange").css("margin-left","120px");
-
-
 	};
 function info3(){//지도및위치반경
-	$(".howteachOfchange").load("map.jsp");
+	$(".in1").hide();
+	$(".in2").hide();
+	$(".in3").hide();
+	$(".in4").hide();
+	$(".in4").show();
+
 	$(".howteachOfchange").css("width","1000");
 	$(".howteachOfchange").css("margin-left","0px");
-	$(".howteachOfchange").html("여기다가 지도를 넣자.")
 	
 	};
 
@@ -60,7 +101,7 @@ margin-top:90px;
 padding-bottom:20px;
 }
 
-}
+
 
 .topbend{
 background:#00ffff;
@@ -204,7 +245,15 @@ margin-top:2px;
 min-height:200px;
 border:1px solid; #000000;
 }
-
+.item{
+}
+.item>img{
+width:600px;
+height:600px;
+margin-left: auto; 
+margin-right: auto;
+border-radius: 35px;
+}
 </style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -303,43 +352,81 @@ border:1px solid; #000000;
 		
 		
 	<div class="howteachOfchange">
-	<nav class="i1">
-<nav class="info1Oftop">
-<!-- 간단한소개 -->
-나는 말이야!!
-
-</nav>
-<nav class="info1Oftop" id="info10">
-<!--  진행방식-->
-수업은 이렇게 할거야!
-
-</nav>
-<nav class="info1Oftop">
-<!-- 수업경력과 포부 -->
-내가 해온거야!
-
-</nav>
+		<nav class="in1">
+			<nav class="info1Oftop">
+			<!-- 간단한소개 -->
+			나는 말이야!!
+			
+			</nav>
+			<nav class="info1Oftop" id="info10">
+			<!--  진행방식-->
+			수업은 이렇게 할거야!
+			
+			</nav>
+			<nav class="info1Oftop">
+			<!-- 수업경력과 포부 -->
+			내가 해온거야!
+			</nav>
 		</nav>
-	</div>
+	
 		
-		<div>
+		<div class="in2">
+		카테고리<br>
+		수업레벨<br>
+		지역<br>
+		수업교재<br>
+		목표유형<br>
+		가능일정<br>
+		
 		
 		</div>
 		
-		<div>
+		<div class="in3">
+		<div class="container">
+        <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="span12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="span8" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner"> 
+                                    <!-- 이미지 받기 -->
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="/prototype/resources/img/bg-masthead.jpg"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img src="/prototype/resources/img/bg-masthead2.jpg"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="/prototype/resources/img/bg-showcase-1.jpg"></div>
+d
+                                        <div class="item" data-slide-number="3">
+                                        <img src="/prototype/resources/img/bg-showcase-2.jpg"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                        <img src="/prototype/resources/img/bg-showcase-3.jpg"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                        <img src="/prototype/resources/img/tech.jpg"></div>
+                                    
+                                    </div><!-- Carousel nav -->
+                                    <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/Slider-->      
+		</div>
+		
+		<div class="in4">
 		
 		</div>
 		
-		<div>
-		
 		</div>
-		
-		
-		
-		
-		
-		
-		
+	
 		</li>
 	</ul>
 	</nav><!--커리큘럼란 종료-->

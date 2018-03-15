@@ -3,30 +3,46 @@
 <!DOCTYPE html >
 <html>
 <head>
-
-
 <script type="text/javascript" src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-
-	<!-- 헤더 -->
-    <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
-    <script src="/prototype/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-	<!-- 메뉴바 태그및 꾸밈-->
-    <link href="/prototype/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/prototype/resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function info(){//수업정보보기
 	
-	<!-- 메뉴바 폰트 -->
-    <link href="/prototype/resources/css/menu.css" rel="stylesheet">
+	$(".howteachOfchange").load("info.jsp")
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
+	};
+	
+function info1(){//수정방식보기
+
+	$(".howteachOfchange").load("info1.jsp");
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
+
+	};
+function info2(){//자격관련 이미지
+
+	$(".howteachOfchange").load("imagechange.jsp");
+	$(".howteachOfchange").css("width","700");
+	$(".howteachOfchange").css("margin-left","120px");
+
+
+	};
+function info3(){//지도및위치반경
+	$(".howteachOfchange").load("map.jsp");
+	$(".howteachOfchange").css("width","1000");
+	$(".howteachOfchange").css("margin-left","0px");
+
+	
+	};
+
+</script>
 	
 <style type="text/css">
 /* 스타 별점 */
 
-
-
-/*스타별점 ㅈ*/
+/*스타별점 */
 
 
 html {
@@ -39,7 +55,7 @@ height: 100%;
 .contents{
 min-height: 100%;
 position: relative;
-margin-top:200px;
+margin-top:90px;
 padding-bottom:20px;
 }
 .footer{
@@ -51,9 +67,7 @@ height:150px;
 color: white;
 background-color: silver;
 }
-.contents{
 
-}
 .topbend{
 background:#00ffff;
 margin:0px auto;
@@ -92,25 +106,33 @@ height:300px;
 .topdiv[name=option]{
 width:180px;
 height:300px;
+background:#000000;
+margin-left:10px; 
+padding:45px;
 }
-
+.imticon{
+margin-top:110px;
+margin-left:-39px;
+}
 .topdiv[name=img]>ul>li{/*사진이 속한 영역 리스트형식 */
-list-style:none
+list-style:none;
+margin-top:20px;
+margin-left: -30px;
 }
 
 .topdiv[name=img]>ul>li>img{/*사진의 크기 및 위치 백그라운드*/
-
 width:200px;
 height:200px;
 padding-left:0px;
-padding-top:10px;
-padding-right:5px;
+padding-top:0px;
+padding-right:0px;
 padding-bottom:0px;
-background:red;
+border-radius: 50%;
 }
 .underpic{/*사진 바로 및 이름 및,나이 성별*/
 margin-top:15px;
 text-align: center;
+margin-left: 15px;
 }
 .review{/*리뷰의 가장상위 영역*/
 
@@ -125,7 +147,8 @@ background:#cc66ff;
 margin:0 auto;
 margin-top:3px;
 width:1100px;
-height:300px;
+height:600px;
+
 }
 .reviewtop{/*리뷰의 상위*/
 list-style:none;
@@ -140,15 +163,38 @@ margin:0 auto;
 margin-top:3px;
 width:1100px;
 height:200px;
+border: 1px solid #ffffff;
 }
 .divOfreviewdetail{/*리뷰 내용이 들어감(nav) */
 background:red;
 width:930px;
 height:130px;
 }
+.schoolofdetail{
+list-style:none;
+margin-top:10px;
+margin-left:-20px;
+margin-right:10px;
+}
+.schoolOfdetailIOfli{
+float:left;
+width:225px;
+background:#66cccc;
+margin: 20px;
+height:140px;
+padding:20px;
+}
+.howteachofbtn{
 
 
-
+}
+.howteachOfchange{
+background:#ff6666;
+margin-top:30px;
+padding-top:10px;
+width:1000px;
+max-height:500px;
+}
 
 </style>
 
@@ -156,42 +202,8 @@ height:130px;
 <title>선생이름 님의 ...?</title>
 </head>
 <body>
-   <!-- 헤더 시작-->
-<header class="masthead text-white text-center">
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="/prototype/main.html">로고박기</a>
-		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"	aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto" style="width: 500px; margin:0 auto;">
-            <li class="nav-item active" >
-			  <a class="nav-link" href="/prototype/viewstudent.jsp">선생찾기<span		class="sr-only">(current)</span></a>
-            </li>
-			    <li class="nav-item">
-              <a class="nav-link" href="/prototype/main.html">학생찾기</a>
-            </li>
-			</li>
-			    <li class="nav-item">
-              <a class="nav-link" href="/prototype/main.html">카테고리찾기</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="/prototype/main.html">신고합니다!</a>
-            </li>
-			</li>
-			    <li class="nav-item" style="margin-right:0px;">
-              <a class="nav-link" href="/prototype/main.html">건의합니다</a>
-            </li>
-          </ul>
-
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-
-		 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-	</header>
+<!-- 헤더 시작-->
+<%@ include file="/header.jsp" %>
 <!-- 헤더 종료-->
 
 <!--내용물-->
@@ -224,19 +236,19 @@ height:130px;
 		</ul>
 		</li>
 		<li class="topdiv" name="option">
-		여기다 이 페이지의 정보 넣기, 
-		조회수,등등
+		조회수?<br>
+		등록일?<br>
+		<nav class="imticon">
+		<%@include file="./imticon.jsp" %>
+		</nav>
 		</li>
 	</ul>
 	</nav>
     <nav class="review"><!-- 리뷰란 -->
 	
 	<ul class="reviewtop">
-		<li class="reviewtitle"> 회원정보      
-        <%@ include file="../01.CJS/star.jsp" %>
-
-		<--레인지 타입을 별로 바꾸기.
-		
+		<li class="reviewtitle"> 회원정보   &nbsp;    &nbsp;    &nbsp;    &nbsp; 
+        <%@ include file="../01.CJS/Fixedstar.jsp" %>
 		
 		</li>
 		
@@ -248,7 +260,7 @@ height:130px;
 		</li>
 	
 	<li Style="text-align:right; margin-right:10px">
-	다른 후기들보기
+	다른 후기들보기<-하이퍼링크 추가하기 혹은 버튼
 	</li>
 	</ul>
 
@@ -258,12 +270,35 @@ height:130px;
 
 	<nav class="school"><!--학력란-->
 	
+	<ul class="schoolofdetail">
+		<li class="schoolOfdetailIOfli">고등학교나옴!</li>	
+		<li class="schoolOfdetailIOfli">공부 쫌 잘함.!</li>	
+		<li class="schoolOfdetailIOfli">집은 님근처로 이사감</li>
+		<li class="schoolOfdetailIOfli">월 30만원! 20회수업!</li>
+	</ul>
+	
 	</nav>
 
 
-	<nav class="howteach"><!--커리큘럼란-->
-	
+	<nav class="howteach" style="padding-top:10px;"><!--커리큘럼란-->
+	<ul style="list-style:none; padding-top:15px;  ">
+		<li>
+		<nav>
+		<input type="button" value="수업 소개" class="howteachofbtn" onclick="info();">
+		<input type="button" value="수업 정보" class="howteachofbtn" style="margin-left:50px;" onclick="info1();">
+		<input type="button" value="포트폴리오" class="howteachofbtn" style="margin-left:50px;" onclick="info2();">
+		<input type="button" value="위치 및 반경" class="howteachofbtn" style="margin-left:50px;" onclick="info3();">
+		</nav>
+		</li>
+		<li>
+	<div class="howteachOfchange">
+		<%@include file='./info.jsp'%>
+	</div>
+		
+		</li>
+	</ul>
 	</nav><!--커리큘럼란 종료-->
+
 
 
 </nav>
@@ -272,51 +307,7 @@ height:130px;
 <!--내용 끝-->
 
  <!-- 바닥 -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
-          </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-facebook fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-instagram fa-2x fa-fw"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <%@include file="/footer.jsp" %>
 <!--바닥종료-->
 
 

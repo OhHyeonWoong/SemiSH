@@ -71,13 +71,14 @@ min-height: 440px;
 </style>
 </head>
 <body>
+
 <%@ include file="/header.jsp" %>
 <div class="main">
 <div class="container">
     <div class="row">
     
   		
-  		<h2>해당 페이지는 관리자 페이지</h2>
+  		<h2>해당 페이지는 관리자 페이지 회원 삭제하거나, 회원의 권한을 설정할수있다. 옆에 필터로 검색.</h2>
   	
         <div class="col-md-10 col-md-offset-1">
 

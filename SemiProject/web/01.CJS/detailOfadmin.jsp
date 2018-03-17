@@ -56,13 +56,10 @@
     left: 20px;
 }
 .col-md-7{
-background: gray;
 margin-top: 150px;
+margin-left: 190px;
 }
-panel panel-default{
-background: black;
-width:600px; 
-}
+
 #profile-image1 {
     cursor: pointer;
      width: 100px;
@@ -189,7 +186,7 @@ width:600px;
 
 
     <div class="row" >
-        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4" Style="margin-left:0px;">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4" Style="margin-left:30px;">
             <div class="panel panel-default" Style="width:300px; overflow: visible;">
                 <!-- Default panel contents -->
                 <h2 class="panel-heading" style="text-align:center;">권한 설정</h2>

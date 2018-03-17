@@ -103,7 +103,7 @@ background-color: silver;
             </li>
 			</li>
 			    <li class="nav-item" style="margin-right:0px;">
-              <a class="nav-link" href="#">건의합니다</a>
+              <a class="nav-link" href="/prototype/04.OJK\report.jsp">건의합니다</a>
             </li>
           </ul>
           

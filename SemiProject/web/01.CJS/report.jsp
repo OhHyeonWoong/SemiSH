@@ -99,7 +99,7 @@ th {
 
 <nav class="contents">
 	<br>
-	<h1 align="center">건의게시판</h1>
+	<h1 align="center">신고 계시판</h1>
 	<hr>
 	<section>
 <div id="wrapper">

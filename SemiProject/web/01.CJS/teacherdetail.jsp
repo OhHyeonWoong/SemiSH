@@ -28,9 +28,18 @@ height: 100%;
 }
 .contents{
 min-height: 100%;
-position: relative;
 margin-top:90px;
 padding-bottom:20px;
+}
+.container{
+overflow: hidden;
+position: absolute;
+}
+.panel-heading{
+width:100%;
+}
+.panel-body{
+width:100%;
 }
 
 .topbend{
@@ -176,8 +185,7 @@ min-height:200px;
 border:1px solid; #000000;
 }
 .in3{
-margin-top:15px;
-margin-left:100px;
+padding: 10px;
 }
 .item{
 }
@@ -273,12 +281,9 @@ border-radius: 35px;
 
 
 	<nav class="howteach" style="padding-top:10px;"><!--커리큘럼란-->
-	
-	
-		
 <div class="container" >
-    <div class="col-md-6" Style="width:1800px;">
-        <div class="panel with-nav-tabs panel-info">
+    <div class="col-md-6" Style="margin-left:150px; margin-top: 15px;">
+        <div class="panel with-nav-tabs panel-info" Style="width:700px;">
             <div class="panel-heading">
                 <ul class="nav nav-tabs">
                     <li class="active">
@@ -316,14 +321,15 @@ border-radius: 35px;
                     </div>
                     
                     <div class="tab-pane fade" id="tab2info">
-                    2번째
+                   
+                   수업 방식.
                     
                     </div>
                     
                     
-                    <div class="tab-pane fade" id="tab3info">
-                   <div class="in3">
-		<div class="container" >
+                    <div class="tab-pane fade" id="tab3info" Style="padding-left: 50px;">
+                   <div class="in3" >
+		<div class="container1" >
         <div id="main_area">
                 <!-- Slider -->
                 <div class="row">
@@ -365,9 +371,57 @@ border-radius: 35px;
 		
 	</div>
 </div>
-                    </div>
-                  
-                   
+</div>
+           <div id="tab4info" class="tab-pane fade">
+           <div style="padding: 10px">
+           <div id="map" style="width:650px; height:300px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=120b01867e29e09658100681cf1d0604&libraries=services"></script>
+<script>
+//주소-좌표 변환 객체를 생성합니다
+var geocoder = new daum.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addressSearch('경기도 광명시 도덕공원로 75', function(result, status) {
+
+    // 정상적으로 검색이 완료됐으면 
+     if (status === daum.maps.services.Status.OK) {
+
+      coords = new daum.maps.LatLng(result[0].y, result[0].x);
+
+        // 결과값으로 받은 위치를 마커로 표시합니다
+       var circle = new daum.maps.Circle({
+                center : coords,  // 원의 중심좌표 입니다 
+                radius: 100, // 미터 단위의 원의 반지름입니다 
+                strokeWeight: 1, // 선의 두께입니다 
+                strokeColor: '#75B8FA', // 선의 색깔입니다
+                strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+                strokeStyle: 'dashed', // 선의 스타일 입니다
+                fillColor: '#CFE7FF', // 채우기 색깔입니다
+                fillOpacity: 0.8  // 채우기 불투명도 입니다   
+            }); 
+
+            // 지도에 원을 표시합니다 
+            circle.setMap(map); 
+      
+            
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+    } 
+});    
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = {
+        center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 4 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+var map = new daum.maps.Map(mapContainer, mapOption); 
+
+</script>
+           </div>
+                 
+                  </div>          
                
             </div>
         </div>

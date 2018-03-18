@@ -150,7 +150,6 @@ a.btn.disabled, fieldset[disabled] a.btn {
 			<li class="nav-item" style="margin-right: 0px;"><a
 				class="nav-link" href="#">건의합니다</a></li>
 		</ul>
-
 		<form class="form-inline mt-2 mt-md-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search"
 				aria-label="Search">

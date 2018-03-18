@@ -99,7 +99,7 @@ background-color: silver;
               <a class="nav-link" href="#">카테고리찾기</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">신고합니다!</a>
+              <a class="nav-link disabled" href="\prototype\01.CJS\report.jsp">신고합니다!</a>
             </li>
 			</li>
 			    <li class="nav-item" style="margin-right:0px;">

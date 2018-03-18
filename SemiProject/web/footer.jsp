@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 	<!-- 메뉴바 태그및 꾸밈-->
+	
 	<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
 	  <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	

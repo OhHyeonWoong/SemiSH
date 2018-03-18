@@ -25,8 +25,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">은밀한 과외란...</a></li>
-        <li><a href="#">선생 찾기</a></li>
-        <li><a href="#">학생 찾기</a></li>
+        <li><a href="/prototype/03.OHW/views/find_teacher.jsp">선생 찾기</a></li>
+        <li><a href="/prototype/03.OHW/views/find_stu.jsp">학생 찾기</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">카테고리로 찾기<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -40,8 +40,12 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Join</a></li>
-      </ul>
+      	<li><form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style="margin-top:7px;">
+		 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-top:7px;">Search</button>
+          </form>
+         </li>
+      </ul>       
     </div>
   </div>
 </nav>

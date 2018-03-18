@@ -1,41 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 <head>
 <script type="text/javascript" src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
+    <script src="/prototype/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
-function info(){//수업정보보기
-	
-	$(".howteachOfchange").load("info.jsp")
-	$(".howteachOfchange").css("width","1000");
-	$(".howteachOfchange").css("margin-left","0px");
-	};
-	
-function info1(){//수정방식보기
-
-	$(".howteachOfchange").load("info1.jsp");
-	$(".howteachOfchange").css("width","1000");
-	$(".howteachOfchange").css("margin-left","0px");
-
-	};
-function info2(){//자격관련 이미지
-
-	$(".howteachOfchange").load("imagechange.jsp");
-	$(".howteachOfchange").css("width","700");
-	$(".howteachOfchange").css("margin-left","120px");
-
-
-	};
-function info3(){//지도및위치반경
-	$(".howteachOfchange").load("map.jsp");
-	$(".howteachOfchange").css("width","1000");
-	$(".howteachOfchange").css("margin-left","0px");
-
-	
-	};
 
 </script>
 	
@@ -43,8 +19,6 @@ function info3(){//지도및위치반경
 /* 스타 별점 */
 
 /*스타별점 */
-
-
 html {
 height: 100%;
 }
@@ -57,15 +31,6 @@ min-height: 100%;
 position: relative;
 margin-top:90px;
 padding-bottom:20px;
-}
-.footer{
-<!--position:fixed;포지션픽스시, 화면을 따라다님 -->
-position: absolute;
-margin-bottom:0%;
-width:100%;
-height:150px;
-color: white;
-background-color: silver;
 }
 
 .topbend{
@@ -193,9 +158,36 @@ background:#ff6666;
 margin-top:30px;
 padding-top:10px;
 width:1000px;
+min-height:100px;
 max-height:500px;
 }
-
+.info1Oftop{
+width:100%;
+background:#ffffff;
+margin-top:2px; 
+min-height:70px;
+border:1px solid; #000000;
+}
+#info10{
+width:100%;
+background:#ffffff;
+margin-top:2px; 
+min-height:200px;
+border:1px solid; #000000;
+}
+.in3{
+margin-top:15px;
+margin-left:100px;
+}
+.item{
+}
+.item>img{
+width:600px;
+height:600px;
+margin-left: auto; 
+margin-right: auto;
+border-radius: 35px;
+}
 </style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -260,7 +252,7 @@ max-height:500px;
 		</li>
 	
 	<li Style="text-align:right; margin-right:10px">
-	다른 후기들보기<-하이퍼링크 추가하기 혹은 버튼
+	다른 후기들보기-하이퍼링크 추가하기 혹은 버튼
 	</li>
 	</ul>
 
@@ -281,27 +273,129 @@ max-height:500px;
 
 
 	<nav class="howteach" style="padding-top:10px;"><!--커리큘럼란-->
-	<ul style="list-style:none; padding-top:15px;  ">
-		<li>
-		<nav>
-		<input type="button" value="수업 소개" class="howteachofbtn" onclick="info();">
-		<input type="button" value="수업 정보" class="howteachofbtn" style="margin-left:50px;" onclick="info1();">
-		<input type="button" value="포트폴리오" class="howteachofbtn" style="margin-left:50px;" onclick="info2();">
-		<input type="button" value="위치 및 반경" class="howteachofbtn" style="margin-left:50px;" onclick="info3();">
-		</nav>
-		</li>
-		<li>
-	<div class="howteachOfchange">
-		<%@include file='./info.jsp'%>
-	</div>
+	
+	
 		
-		</li>
-	</ul>
-	</nav><!--커리큘럼란 종료-->
+<div class="container" >
+    <div class="col-md-6" Style="width:1800px;">
+        <div class="panel with-nav-tabs panel-info">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                    <a href="#tab1info" data-toggle="tab">수업정보</a></li>
+                    <li><a href="#tab2info" data-toggle="tab">수업방식</a></li>
+                    <li><a href="#tab3info" data-toggle="tab">포트폴리오</a></li>
+                    <li><a href="#tab4info" data-toggle="tab">위치및 반경</a></li>
+        
+                </ul>
+            </div>
+            
+            
+            <div class="panel-body">
+            
+            
+            <div class="tab-content">
+                    
+                    <div class="tab-pane fade in active" id="tab1info">
+            <nav class="in1">
+			<nav class="info1Oftop">
+			<!-- 간단한소개 -->
+			나는 말이야!!
+			
+			</nav>
+			<nav class="info1Oftop" id="info10">
+			<!--  진행방식-->
+			수업은 이렇게 할거야!
+			
+			</nav>
+			<nav class="info1Oftop">
+			<!-- 수업경력과 포부 -->
+			내가 해온거야!
+			</nav>
+		</nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="tab2info">
+                    2번째
+                    
+                    </div>
+                    
+                    
+                    <div class="tab-pane fade" id="tab3info">
+                   <div class="in3">
+		<div class="container" >
+        <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="span12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="span8" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner"> 
+                                    <!-- 이미지 받기 -->
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="/prototype/resources/img/bg-masthead.jpg"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img src="/prototype/resources/img/bg-masthead2.jpg"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="/prototype/resources/img/bg-showcase-1.jpg"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img src="/prototype/resources/img/bg-showcase-2.jpg"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                        <img src="/prototype/resources/img/bg-showcase-3.jpg"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                        <img src="/prototype/resources/img/tech.jpg"></div>
+                                    
+                                    </div><!-- Carousel nav -->
+                                    <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/Slider-->      
+		</div>
+		
+		
+	</div>
+</div>
+                    </div>
+                  
+                   
+               
+            </div>
+        </div>
+    
+    </div>
+</div>
+</div>
+
+	</nav>
+	
+	<!--커리큘럼란 종료-->
+
+
+
+
 
 
 
 </nav>
+
+
+
+
+
+
+
+
+
 
 
 <!--내용 끝-->

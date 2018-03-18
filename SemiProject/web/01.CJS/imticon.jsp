@@ -26,7 +26,7 @@ padding:8px; background:#ffffff; margin-right:4px;
 </head>
 <body>
 <div class="container">
-<a class="btn icon-btn btn-success" href="#"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>관심등록!</a><br>
+<a class="btn icon-btn btn-success" href="#"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>관심등록!</a><br><br>
 <a class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>추천합니다!</a>
 </div>
 

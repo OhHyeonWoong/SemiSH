@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,11 +99,11 @@ background-color: silver;
               <a class="nav-link" href="#">카테고리찾기</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">신고합니다!</a>
+              <a class="nav-link disabled" href="\prototype\01.CJS\report.jsp">신고합니다!</a>
             </li>
 			</li>
 			    <li class="nav-item" style="margin-right:0px;">
-              <a class="nav-link" href="#">건의합니다</a>
+              <a class="nav-link" href="/prototype/04.OJK\report.jsp">건의합니다</a>
             </li>
           </ul>
           
@@ -113,15 +114,15 @@ background-color: silver;
         </div>
       </nav>
       <div class="overlay"></div>
-      <div class="container"  style="margin-top:150px"> <!--마진탭이 배경화면 사진의 크기.-->
+      <div class="container"  style="margin-top:250px"> <!--마진탭이 배경화면 사진의 크기.-->
         <div class="row">
           <div class="col-xl-9 mx-auto">
-             <h1 class="mb-5"><br></h1>
+             <h1 class="mb-5">df</h1>
           </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" >
             <form action="#" method="post"> <!-- 검색기능 -->
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
+              <div class="form-row"  >
+                <div class="col-12 col-md-9 mb-2 mb-md-0" >
                   <input type="text" class="form-control form-control-lg" placeholder="뭐 배울래?">
                 </div>
                 <div class="col-12 col-md-3">
@@ -134,9 +135,7 @@ background-color: silver;
       </div>
     </header>   
 <!--내용물-->
-<nav class="contents"> 
-메인에 뭘넣어야하나?
-</nav>
+
 <!--내용 끝-->
     <!-- Footer -->
      <footer class="footer">

@@ -9,7 +9,6 @@
     <link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
     <script src="/prototype/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 
@@ -377,7 +376,7 @@ border-radius: 35px;
            <div id="tab4info" class="tab-pane fade">
            <div style="padding: 10px">
            <div id="map" style="width:650px; height:350px;" ></div>
-
+<!-- 포트번호 8889 -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=120b01867e29e09658100681cf1d0604&libraries=services"></script>
 <script>
 //주소-좌표 변환 객체를 생성합니다

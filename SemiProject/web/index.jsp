@@ -13,7 +13,9 @@
 
     <!-- Bootstrap core CSS -->
 	<!-- Bootstrap core JavaScript -->
-    <script src="resources/vendor/jquery/jquery.min.js"></script>
+    <script src="resources/vendor/jquery/jquery.min.js">
+    
+    </script>
     <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

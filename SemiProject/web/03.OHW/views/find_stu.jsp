@@ -38,11 +38,23 @@
 		}
 	}
 	
+	function searchView() {
+		
+		$("#search_table").show();
+		
+	}
+	
+	function hideView() {
+		
+		$("#search_table").hide();
+		
+	}
+	
 </script>
 
 <style type="text/css">
 			
-	.tclass, #person_info, #class_dinfo {
+	.tclass, #person_info, #class_dinfo, #search_table {
 		display : none;	
 	}
 	
@@ -84,20 +96,7 @@
 		overflow : auto;
 		margin-left : 20px;
 		
-	}
-	
-	.teacher_info {
-		
-		
-	}
-	
-	.class_info {
-		
-		
-	}
-	
-	
-	
+	}	
 	
 </style>
 </head>
@@ -354,12 +353,12 @@
 	
 	<section class="button_section">
 		<div style="width : 200px; margin-left:45%; overflow:hidden; margin-top : 30px; margin-bottom : 30px;">
-			<button type="submit" class="btn btn-info">검색하기</button>
-			<button type="reset" class="btn btn-info">초기화하기</button>		
+			<button type="submit" class="btn btn-info" onclick="searchView();">검색하기</button>
+			<button type="reset" class="btn btn-info" onclick="hideView();">초기화하기</button>			
 		</div>		
 	</section>
 	
-	<section>
+	<section id="search_table">
 		<table class="table table-hover" style="width : 50%; margin-left : 30%;">
     <thead>
       <tr>

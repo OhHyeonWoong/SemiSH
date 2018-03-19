@@ -13,6 +13,8 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 
+
+
 </script>
 	
 <style type="text/css">
@@ -374,7 +376,7 @@ border-radius: 35px;
 </div>
            <div id="tab4info" class="tab-pane fade">
            <div style="padding: 10px">
-           <div id="map" style="width:650px; height:300px;"></div>
+           <div id="map" style="width:650px; height:350px;" ></div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=120b01867e29e09658100681cf1d0604&libraries=services"></script>
 <script>
@@ -382,7 +384,7 @@ border-radius: 35px;
 var geocoder = new daum.maps.services.Geocoder();
 
 // 주소로 좌표를 검색합니다
-geocoder.addressSearch('경기도 광명시 도덕공원로 75', function(result, status) {
+geocoder.addressSearch('경기도 의왕시 삼동 부곡복지관길 41', function(result, status) {
 
     // 정상적으로 검색이 완료됐으면 
      if (status === daum.maps.services.Status.OK) {
@@ -392,7 +394,7 @@ geocoder.addressSearch('경기도 광명시 도덕공원로 75', function(result
         // 결과값으로 받은 위치를 마커로 표시합니다
        var circle = new daum.maps.Circle({
                 center : coords,  // 원의 중심좌표 입니다 
-                radius: 100, // 미터 단위의 원의 반지름입니다 
+                radius: 200, // 미터 단위의 원의 반지름입니다 
                 strokeWeight: 1, // 선의 두께입니다 
                 strokeColor: '#75B8FA', // 선의 색깔입니다
                 strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
@@ -406,9 +408,10 @@ geocoder.addressSearch('경기도 광명시 도덕공원로 75', function(result
       
             
         // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-        map.setCenter(coords);
+        map.setCenter( new daum.maps.LatLng(result[0].y, result[0].x) );
     } 
 });    
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
         center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표

@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	function movePage(id) {  		
+  		location.href = "/prototype/03.OHW/views/find_teacher.jsp?id=" + id; 		
+  	}
+  </script>
 </head>
 <body>
 
@@ -30,11 +35,11 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">카테고리로 찾기<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_game" onclick="">게임</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_sport" onclick="">스포츠</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_music" onclick="">음악</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_dance" onclick="">댄스</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_etc" onclick="">기타</a></li>
+            <li><a id = "cate_game" onclick="movePage(this.id)">게임</a></li>
+            <li><a id = "cate_sport" onclick="movePage(this.id)">스포츠</a></li>
+            <li><a id = "cate_music" onclick="movePage(this.id)">음악</a></li>
+            <li><a id = "cate_dance" onclick="movePage(this.id)">댄스</a></li>
+            <li><a id = "cate_etc" onclick="movePage(this.id)">기타</a></li>
           </ul>
         </li>
         <li><a href="#">신고하기</a></li>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,20 +51,24 @@
 		
 	}
 	
-	function selectCategory(id) {
+	$(document).ready(function selectCategory() {
 		
-		console.log(id);
+		<% String cat = request.getParameter("id"); %>
 		
-		switch(id) {
+		var cat1 = "<%= cat %>";				
+		 		
+		switch(cat1) {
 		
-		case "cate_game" : $(".tclass").hide(); $("#tgame").show(); break; break; 
+		case "cate_game" : $(".tclass").hide(); $("#tgame").show(); break; 
 		case "cate_sport" : $(".tclass").hide(); $("#tsport").show(); break; 
 		case "cate_music" : $(".tclass").hide(); $("#tmusic").show(); break; 
 		case "cate_dance" : $(".tclass").hide(); $("#tdance").show(); break; 
 		case "cate_etc" : $(".tclass").hide(); $("#tetc").show(); break; 
 		
 		}		
-	}
+	});
+	
+	 
 	
 </script>
 

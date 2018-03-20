@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset=UTF-8>
-<title>은밀한 결과</title>
+<title>은밀한 선생</title>
 <script type="text/javascript" src="/prototype/03.OHW/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 	
@@ -48,6 +48,21 @@
 		
 		$("#search_table").hide();
 		
+	}
+	
+	function selectCategory(id) {
+		
+		console.log(id);
+		
+		switch(id) {
+		
+		case "cate_game" : $(".tclass").hide(); $("#tgame").show(); break; break; 
+		case "cate_sport" : $(".tclass").hide(); $("#tsport").show(); break; 
+		case "cate_music" : $(".tclass").hide(); $("#tmusic").show(); break; 
+		case "cate_dance" : $(".tclass").hide(); $("#tdance").show(); break; 
+		case "cate_etc" : $(".tclass").hide(); $("#tetc").show(); break; 
+		
+		}		
 	}
 	
 </script>

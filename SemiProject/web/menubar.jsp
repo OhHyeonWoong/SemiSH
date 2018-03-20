@@ -30,11 +30,9 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">카테고리로 찾기<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_game" onclick="">게임</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_sport" onclick="">스포츠</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_music" onclick="">음악</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_dance" onclick="">댄스</a></li>
-            <li><a href="/prototype/03.OHW/views/find_teacher.jsp" id = "cate_etc" onclick="">기타</a></li>
+            <li><a href="#">카테고리1</a></li>
+            <li><a href="#">카테고리2</a></li>
+            <li><a href="#">카테고리3</a></li>
           </ul>
         </li>
         <li><a href="#">신고하기</a></li>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset=UTF-8>
-<title>은밀한 결과</title>
+<title>은밀한 학생</title>
 <script type="text/javascript" src="/prototype/03.OHW/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 	

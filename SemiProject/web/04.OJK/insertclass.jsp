@@ -1,35 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-
-
 <script type="text/javascript"
 	src="/prototype/resources/js/jquery-3.3.1.min.js"></script>
-
-
-<!-- 헤더 -->
-<link href="/prototype/resources/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
-<script src="/prototype/resources/vendor/jquery/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
-	src="/prototype/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- 메뉴바 태그및 꾸밈-->
-<link
-	href="/prototype/resources/vendor/font-awesome/css/font-awesome.min.css"
-	rel="stylesheet" type="text/css">
-<link
-	href="/prototype/resources/vendor/simple-line-icons/css/simple-line-icons.css"
-	rel="stylesheet" type="text/css">
-<link
-	href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
-	rel="stylesheet" type="text/css">
-<!-- 메뉴바 폰트 -->
-<link href="/prototype/resources/css/menu.css" rel="stylesheet">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-
+<script type="text/javascript">
+	
+</script>
 <style type="text/css">
 html {
 	height: 100%;
@@ -43,29 +30,8 @@ body {
 .contents {
 	min-height: 100%;
 	position: relative;
-	margin-top: 200px;
+	margin-top: 90px;
 	padding-bottom: 20px;
-}
-
-.footer {<!--
-	position: fixed; 포지션픽스시 , 화면을 따라다님 --> position : absolute;
-	margin-bottom: 0%;
-	width: 100%;
-	height: 150px;
-	color: white;
-	background-color: silver;
-}
-
-/* 사진부분 */
-.img-circle {
-	border-radius: 50%
-}
-
-hr {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 0;
-	border-top: 1px solid gray;
 }
 
 /* 버튼테마 */
@@ -73,7 +39,7 @@ hr {
 	display: inline-block;
 	padding: 6px 12px;
 	margin-bottom: 0;
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.42857143;
 	text-align: center;
@@ -121,93 +87,107 @@ a.btn.disabled, fieldset[disabled] a.btn {
 	pointer-events: none
 }
 </style>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>선생이름 님의 ...?</title>
+
+<meta charset="UTF-8">
+<title>선생가입</title>
 </head>
 <body>
 	<!-- 헤더 시작-->
-	<header class="masthead text-white text-center"> <nav
-		class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a
-		class="navbar-brand" href="/prototype/main.html">로고박기</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse"
-		data-target="#navbarCollapse" aria-controls="navbarCollapse"
-		aria-expanded="false" aria-label="Toggle navigation">
-
-
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto" style="width: 500px; margin: 0 auto;">
-			<li class="nav-item active"><a class="nav-link"
-				href="/prototype/viewstudent.jsp">선생찾기<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item"><a class="nav-link" href="#">학생찾기</a></li>
-			</li>
-			<li class="nav-item"><a class="nav-link" href="#">카테고리찾기</a></li>
-			<li class="nav-item"><a class="nav-link disabled" href="#">신고합니다!</a>
-			</li>
-			</li>
-			<li class="nav-item" style="margin-right: 0px;"><a
-				class="nav-link" href="#">건의합니다</a></li>
-		</ul>
-		<form class="form-inline mt-2 mt-md-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search"
-				aria-label="Search">
-
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
-	</div></header>
+	<%@ include file="/header.jsp"%>
 	<!-- 헤더 종료-->
-	<!--내용물-->
+	<!-- 내용 시작 -->
+
 	<nav class="contents">
-	<center>
-		<div id="wrapper" style="width: 1100px; height: 1000px;">
-			<div style="width: 1100px; height: 200px; background: gray; padding:50px;">
-			<span>강의명</span>&nbsp;<input type="text" value="classname"><br>
-			<span>전화번호</span>&nbsp;<input type="text" value="phone">
-			
-			</div>
-			</div>
-	</center>
-
-
-
-	</nav>
-	<!--내용 끝-->
-	메인에 뭘넣어야하나?
-	<!-- 바닥 -->
-	<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-				<ul class="list-inline mb-2">
-					<li class="list-inline-item"><a href="#">About</a></li>
-					<li class="list-inline-item">&sdot;</li>
-					<li class="list-inline-item"><a href="#">Contact</a></li>
-					<li class="list-inline-item">&sdot;</li>
-					<li class="list-inline-item"><a href="#">Terms of Use</a></li>
-					<li class="list-inline-item">&sdot;</li>
-					<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-				</ul>
-				<p class="text-muted small mb-4 mb-lg-0">&copy; Your Website
-					2018. All Rights Reserved.</p>
-			</div>
-			<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-				<ul class="list-inline mb-0">
-					<li class="list-inline-item mr-3"><a href="#"> <i
-							class="fa fa-facebook fa-2x fa-fw"></i>
-					</a></li>
-					<li class="list-inline-item mr-3"><a href="#"> <i
-							class="fa fa-twitter fa-2x fa-fw"></i>
-					</a></li>
-					<li class="list-inline-item"><a href="#"> <i
-							class="fa fa-instagram fa-2x fa-fw"></i>
-					</a></li>
-				</ul>
+		<br>
+		<h1 align="center">강의등록하기</h1>
+		<hr>
+		
+		<div class="modal-body" style="width: 1100px;">
+			<div class="tab-content">
+				<div role="tabpanel" id="basic" class="tab-pane active">
+					<form id="id_form_basic" method="post">
+						<h3>내 정보 변경하기</h3>
+						<div class="form-group">
+							<label for="id_companyname">업체 이름 / 서비스 이름</label> <input
+								type="text" class="form-control input-lg" id="id_companyname"
+								name="companyname"
+								placeholder="업체 이름이 없다면 '초보자를 위한 피아노레슨'처럼 서비스에 대해 알 수 있는 이름을 만들어 주세요."
+								value="오주경 고수의 게임 레슨 서비스">
+							<p class="error"></p>
+						</div>
+						<div class="form-group providername-wrap">
+							<label for="id_providername"><span>이름</span> <span
+								data-toggle="tooltip" data-placement="auto right" title=""
+								data-original-title="본인 인증된 이름을 사용하시면 고용율이 150% 상승합니다."><i
+									class="fa fa-question-circle"></i></span></label> <input type="text"
+								class="form-control input-lg" id="id_providername"
+								name="providername" placeholder="" value="오주경">
+							<p class="error"></p>
+						</div>
+						<div class="form-group">
+							<label for="id_zip">우편번호</label> <input type="hidden" id="id_lat"
+								name="lat" value="37.4796"> <input type="hidden"
+								id="id_lng" name="lng" value="127.08">
+							<div id="daumAddressSearch"></div>
+							<div class="input-group" style="width: 100%;">
+								<input type="text" id="id_zip" name="zip" placeholder=""
+									value="06359" disabled="disabled" class="form-control input-lg">
+								<span class="input-group-btn"><button type="button"
+										onclick="getDaumPostcode();return false;"
+										class="btn btn-default btn-border input-lg">우편번호 찾기</button></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="id_addr2">주소</label> <input type="text" id="id_addr1"
+								name="addr1" placeholder="기본 주소"
+								value="서울 강남구 광평로10길 6 (일원동, 한솔마을아파트)" disabled="disabled"
+								class="form-control input-lg">
+							<p class="error"></p>
+						</div>
+						<div class="form-group">
+							<input type="text" id="id_addr2" name="addr2" placeholder="상세 주소"
+								value="" class="form-control input-lg">
+						</div>
+						<div class="form-group">
+							<label for="id_addr2">강의내용</label><br> 
+							<textarea rows="20" cols="150pt"></textarea>
+						</div>
+							<div class="form-group">
+							<label for="id_addr2">이미지</label>
+							<input type="file">
+						</div>
+						<div class="form-group">
+							<label for="id_addr2">카테고리</label><br>
+							<input type="radio">피아노
+						</div>
+						<div class="form-group">
+							<label for="id_addr2">지도</label><br>
+							
+						</div>
+						
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-	</footer>
+		
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--내용 끝-->
+
+	<!-- 바닥 -->
+
 	<!--바닥종료-->
 
 

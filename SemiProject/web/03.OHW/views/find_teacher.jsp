@@ -53,11 +53,11 @@
 	
 	$(document).ready(function selectCategory() {
 		
-		<% String cat = request.getParameter("id"); %>
+		<% String cate = request.getParameter("id"); %>
 		
-		var cat1 = "<%= cat %>";				
+		var cate = "<%= cate %>";				
 		 		
-		switch(cat1) {
+		switch(cate) {
 		
 		case "cate_game" : $(".tclass").hide(); $("#tgame").show(); break; 
 		case "cate_sport" : $(".tclass").hide(); $("#tsport").show(); break; 
